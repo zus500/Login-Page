@@ -1,0 +1,32 @@
+<div class="container">
+	<div class="left-box">
+	</div>
+
+	<div class="center" >
+		<div class="center-first" [ngStyle] = "getStyleFirst()" (click) = "setStyle(0)" >
+			<a class = "link" >
+			<fa-icon [icon]="faUser"></fa-icon>
+			<h2> Login</h2>
+			</a>
+		</div>
+
+		<div class="center-second" [ngStyle] = "getStyleSecond()" (click) = "setStyle(1)">
+			<a class = "link" >
+			<fa-icon [icon]="faAddressCard" ></fa-icon>
+			<h2> Registraion</h2>
+			</a>
+		</div>
+
+		<div class="center-last" [ngStyle] = "getStyleLast()" (click) = "setStyle(2)">
+			<a class = "link" >
+			<fa-icon [icon]="faLock"></fa-icon>
+			<h2> Forgot Password?</h2>
+			</a>
+		</div>
+
+	</div>
+	<div class="right-box">
+		<h1>Login Here</h1>
+
+	</div>
+</div>
