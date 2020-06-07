@@ -1,24 +1,27 @@
 <div class="container">
 	<div class="left-box">
+		here should be cool graffiti
+
+
 	</div>
 
 	<div class="center" >
-		<div class="center-first" [ngStyle] = "getStyleFirst()" (click) = "setStyle(0)" >
-			<a class = "link" >
+		<div class="center-first" >
+			<a class = "link"  routerLink = "/login" routerLinkActive="active" >
 			<fa-icon [icon]="faUser"></fa-icon>
 			<h2> Login</h2>
 			</a>
 		</div>
 
-		<div class="center-second" [ngStyle] = "getStyleSecond()" (click) = "setStyle(1)">
-			<a class = "link" >
+		<div class="center-second" >
+			<a class = "link" routerLink = "/registraion"   routerLinkActive="active">
 			<fa-icon [icon]="faAddressCard" ></fa-icon>
 			<h2> Registraion</h2>
 			</a>
 		</div>
 
-		<div class="center-last" [ngStyle] = "getStyleLast()" (click) = "setStyle(2)">
-			<a class = "link" >
+		<div class="center-last" >
+			<a class = "link" routerLink = "/forgot-password"  routerLinkActive="active">
 			<fa-icon [icon]="faLock"></fa-icon>
 			<h2> Forgot Password?</h2>
 			</a>
@@ -26,7 +29,7 @@
 
 	</div>
 	<div class="right-box">
-		<h1>Login Here</h1>
+		<router-outlet></router-outlet>
 
 	</div>
 </div>
